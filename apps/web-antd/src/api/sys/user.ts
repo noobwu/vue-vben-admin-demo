@@ -5,7 +5,7 @@ import { requestClient } from '#/api/request';
  * @param data
  */
 export async function sysUserPage(data: any) {
-  return requestClient.post<any>('/sys/user/page', data);
+  return requestClient.get<any>('/sys/user/page', { params: data });
 }
 /**
  * 添加用户

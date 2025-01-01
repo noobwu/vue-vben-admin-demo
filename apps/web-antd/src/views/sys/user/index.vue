@@ -199,7 +199,7 @@ const handleDelete = (row: any) => {
               label: '新增',
               type: 'primary',
               icon: 'ant-design:plus-outlined',
-              auth: ['admin', 'sys:user:save'],
+              // auth: ['admin', 'sys:user:save'],
               onClick: handleAdd.bind(null),
             },
           ]"
@@ -208,7 +208,7 @@ const handleDelete = (row: any) => {
               label: '重置密码',
               icon: 'ant-design:setting-outlined',
               ifShow: hasTopTableDropDownActions,
-              auth: ['admin', 'sys:user:resetPassword'],
+              // auth: ['admin', 'sys:user:resetPassword'],
               popConfirm: {
                 title: `是否重置该用户密码？`,
                 confirm: handleResetPassword.bind(null),
@@ -218,7 +218,7 @@ const handleDelete = (row: any) => {
               label: '删除',
               icon: 'ant-design:delete-outlined',
               ifShow: hasTopTableDropDownActions,
-              auth: ['admin', 'sys:user:remove'],
+              // auth: ['admin', 'sys:user:remove'],
               popConfirm: {
                 title: '确定删除吗？',
                 confirm: handleDelete.bind(null, false),
@@ -242,14 +242,14 @@ const handleDelete = (row: any) => {
               label: '详情',
               type: 'link',
               size: 'small',
-              auth: ['admin', 'sys:user:detail'],
+              // auth: ['admin', 'sys:user:detail'],
               onClick: handleDetail.bind(null, row),
             },
             {
               label: '编辑',
               type: 'link',
               size: 'small',
-              auth: ['admin', 'sys:user:update'],
+              // auth: ['admin', 'sys:user:update'],
               onClick: handleEdit.bind(null, row),
             },
           ]"
@@ -257,7 +257,7 @@ const handleDelete = (row: any) => {
             {
               label: '扮演用户',
               icon: 'ant-design:play-square-outlined',
-              auth: ['admin', 'sys:playUser'],
+              // auth: ['admin', 'sys:playUser'],
               popConfirm: {
                 title: `是否扮演该用户？`,
                 confirm: handlePlayUser.bind(null, row),
@@ -266,7 +266,7 @@ const handleDelete = (row: any) => {
             {
               label: '重置密码',
               icon: 'ant-design:setting-outlined',
-              auth: ['admin', 'sys:user:resetPassword'],
+              // auth: ['admin', 'sys:user:resetPassword'],
               popConfirm: {
                 title: `是否重置该用户密码？`,
                 confirm: handleResetPassword.bind(null, row),
@@ -275,13 +275,13 @@ const handleDelete = (row: any) => {
             {
               label: '授权角色',
               icon: 'ant-design:usergroup-add-outlined',
-              auth: ['admin', 'sys:user:grantRole'],
+              // auth: ['admin', 'sys:user:grantRole'],
               onClick: handleGrantRole.bind(null, row),
             },
             {
               label: '锁定用户',
               icon: 'ant-design:lock-outlined',
-              auth: ['admin', 'sys:user:locked'],
+              // auth: ['admin', 'sys:user:locked'],
               popConfirm: {
                 title: `是否锁定该用户？`,
                 confirm: handleLocked.bind(null, row),
@@ -297,7 +297,7 @@ const handleDelete = (row: any) => {
             {
               label: '取消锁定',
               icon: 'ant-design:unlock-outlined',
-              auth: ['admin', 'sys:user:unLocked'],
+              // auth: ['admin', 'sys:user:unLocked'],
               popConfirm: {
                 title: `是否取消锁定该用户？`,
                 confirm: handleUnLocked.bind(null, row),
@@ -313,7 +313,7 @@ const handleDelete = (row: any) => {
             {
               label: '删除',
               icon: 'ant-design:delete-outlined',
-              auth: ['admin', 'sys:user:remove'],
+              // auth: ['admin', 'sys:user:remove'],
               popConfirm: {
                 title: '确定删除吗？',
                 confirm: handleDelete.bind(null, row),

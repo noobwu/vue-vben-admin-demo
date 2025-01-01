@@ -235,6 +235,8 @@ export interface FormSchema<
   dependencies?: FormItemDependencies;
   /** 描述 */
   description?: string;
+  /** 详情span */
+  detailSpan?: number;
   /** 字段名 */
   fieldName: string;
   /** 帮助信息 */

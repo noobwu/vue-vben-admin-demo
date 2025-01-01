@@ -239,6 +239,11 @@ export interface FormSchema<
   fieldName: string;
   /** 帮助信息 */
   help?: string;
+  /**
+   * 是否详情字段（删除dom）
+   * @returns 是否渲染
+   */
+  ifDetail?: boolean | FormItemDependenciesCondition;
   /** 表单项 */
   label?: string;
   // 自定义组件内部渲染

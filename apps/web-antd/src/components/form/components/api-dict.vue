@@ -44,7 +44,7 @@ const DictComponent = computed(() => {
   return ApiSelect;
 });
 const fetch = () => {
-  return requestClient.post('/sys/dict/getByDictType', {
+  return requestClient.get('/sys/dict/getByDictType', {
     dictType: props.code,
     ...props.params,
   });

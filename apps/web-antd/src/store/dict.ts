@@ -3,7 +3,7 @@ import { defineStore } from 'pinia';
 import { requestClient } from '#/api/request';
 
 const getByDictType = (params: any) => {
-  return requestClient.post('/sys/dict/getByDictType', params);
+  return requestClient.get('/sys/dict/getByDictType', { params });
 };
 interface DictState {
   cache: any; // 字典数据缓存

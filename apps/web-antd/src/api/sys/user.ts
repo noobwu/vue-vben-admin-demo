@@ -33,7 +33,7 @@ export async function sysUserRemove(data: any) {
  * @param data 参数
  */
 export async function sysUserDetail(data: any) {
-  return requestClient.post('/sys/user/detail', data);
+  return requestClient.get('/sys/user/detail', { params: data });
 }
 /**
  * 重置密码

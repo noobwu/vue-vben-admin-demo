@@ -273,6 +273,7 @@ export const formSchamas: VbenFormProps = {
       componentProps: {
         placeholder: '请选择所属部门',
         allowClear: true,
+        requestMethod: 'get',
         api: '/sys/dept/tree',
         labelField: 'name',
         valueField: 'id',

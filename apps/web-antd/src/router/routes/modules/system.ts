@@ -40,6 +40,25 @@ const routes: RouteRecordRaw[] = [
         path: '/sys/user/index',
         component: () => import('#/views/sys/user/index.vue'),
       },
+      {
+        meta: {
+          icon: 'ant-design:file-text-outlined',
+          title: '参数配置',
+          order: 80,
+          perms: ['admin', 'sys:config'], // 拥有权限码才能访问
+          component: '/sys/config/index',
+          btns: {
+            'sys:config:page': '分页查询参数配置',
+            'sys:config:detail': '查看参数配置详情',
+            'sys:config:save': '添加参数配置',
+            'sys:config:update': '修改参数配置',
+            'sys:config:remove': '删除参数配置',
+          },
+        },
+        name: 'sys:config',
+        path: '/sys/config/index',
+        component: () => import('#/views/sys/config/index.vue'),
+      },
     ],
   },
 ];
